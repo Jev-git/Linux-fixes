@@ -4,6 +4,11 @@ Not detecting audio device
 pulseaudio -k && sudo alsa force-reload
 ```
 
+# Input languages
+* Settings > Regions and Languages > Manage installed languages > Install Vietnamese > Reboot
+* Settings > Keyboard > Input Sources > Vietnamese (Unikey)
+* Settings > Keyboard > Input Sources > Japanese (Mozc)
+
 # Firefox
 *about:config*
 * browser.quitShortcut.disabled
