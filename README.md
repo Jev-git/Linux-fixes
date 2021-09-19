@@ -35,3 +35,15 @@ press f10
 https://forums.lutris.net/t/bug-osu-game-sound-is-playing-like-the-devils-voice/11965
 
 Lutris > osu > System Options > Scroll down to Enviroment tables > Click Add > set “key” to “PULSE_LATENCY_MSEC” > set its value to 6 > save
+
+# Lutris
+How to delete hidden games in Lutris
+
+https://forums.lutris.net/t/why-its-not-possible-to-remove-games-completely-anymore/11145/10
+
+```
+sqlite3 ~/.local/share/lutris/pga.db
+.tables
+select * from games where hidden = 1
+delete from games where hidden = 1
+```
